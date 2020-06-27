@@ -17,6 +17,7 @@ namespace MVC_Start
       BuildWebHost(args).Run();
             ///Hemu has been a really awesome team mate over the year 
             // Hemu has earned an A for the night
+            Console.WriteLine("Hemu Loves to Talk!!");//Commented by Manoj
     }
 
     public static IWebHost BuildWebHost(string[] args) =>
