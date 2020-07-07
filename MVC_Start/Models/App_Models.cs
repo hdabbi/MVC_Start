@@ -12,7 +12,14 @@ namespace MVC_Start.Models
     public string Phone { get; set; }
   }
 
-  public class ChartModel
+    public class Reviews
+    {
+        public string ItemName { get; set; }
+        public string Rating { get; set; }
+        public string Reviewer { get; set; }
+    }
+
+    public class ChartModel
   {
     public string ChartType { get; set; }
     public string Labels { get; set; }

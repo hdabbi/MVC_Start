@@ -53,8 +53,10 @@ namespace MVC_Start
       {
         routes.MapRoute(
             name: "default",
-            template: "{controller=Home}/{action=Index}/{id?}");
-      });
+            template: "{controller=Home}/{action=Reviews}/{id?}");
+          //template: "{controller=Home}/{action=Index}/{id?}");
+          // template:"{controller=Home}/{action=DemoChart}/{id?}");
+        });
     }
   }
 }

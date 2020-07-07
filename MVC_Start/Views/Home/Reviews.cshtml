@@ -1,0 +1,21 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    Layout = null;
+}
+@model Reviews
+
+@*<p> Thank you for the review</p>
+<p>ItemName: @Model.ItemName </p>
+<p>Rating: @Model.Rating </p>
+<p>Reviewer: @Model.Reviewer </p>*@
+
+<form asp-controller="Home" asp-action="Reviews" method="post">
+    <p>ItemName: <input asp-for="ItemName" /></p>
+    <p>Rating: <input asp-for="Rating" /></p>
+    <p>Reviewer: <input asp-for="Reviewer" /></p>
+
+    <button type="submit">Submit</button>
+</form>
