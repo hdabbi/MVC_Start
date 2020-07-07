@@ -24,11 +24,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
 </head>
 <body>
-  <h1> Bar chart example</h1>
+    <h1> Bar chart example</h1>
 
-  <canvas id="barchartexample" width="800" height="450"></canvas>
+    <canvas id="barchartexample" width="800" height="450"></canvas>
 
-  <script>
+    <script>
     new Chart(document.getElementById("barchartexample"), {
       type: '@Model.ChartType',
       data: {
@@ -49,7 +49,32 @@
         }
       }
     });
-  </script>
+    </script>
+
+    <h1> Pie chart example</h1>
+
+    <canvas id="pie-chart" width="800" height="450"></canvas>
+    <script>
+        new Chart(document.getElementById("pie-chart"), {
+            type: 'pie',
+            data: {
+              labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+              datasets: [{
+                label: "Population (millions)",
+                backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+                data: [2478,5267,734,784,433]
+              }]
+            },
+            options: {
+              title: {
+                display: true,
+                text: 'Predicted world population (millions) in 2050'
+              }
+            }
+        });
+    </script>
+
+
 </body>
 </html>
 
